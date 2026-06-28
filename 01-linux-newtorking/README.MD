@@ -23,22 +23,22 @@ Executed on the target Linux machine to enable secure remote access:
    ```
    sudo apt update
    sudo apt install openssh-server -y
-  ```
+    ```
 
 2. **Start and verify the SSH service**
-  ```
-  sudo systemctl start ssh
-  sudo systemctl status ssh
-  ```
+    ```
+    sudo systemctl start ssh
+    sudo systemctl status ssh
+    ```
 
 3. **Allow SSH traffic through firewall: (It worked overall, but I did it just in case.)**
-  ```
-  sudo ufw allow ssh
-  ```
+    ```
+    sudo ufw allow ssh
+    ```
 
-🔑 **Client Connection**
+4. 🔑 **Client Connection**
 Connected successfully from the Windows terminal to estabilish the client-server architecture:
-  ```
-  ssh ajgorek@192.168.1.107
-  ```
+    ```
+    ssh ajgorek@192.168.1.107
+    ```
 ###### Accepted the ED25519 key fingerprint (Trust on First Use mechanism) to establish the secure connection.
